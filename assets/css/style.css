@@ -33,6 +33,21 @@ body {
     color: var(--var-primary-color);
 }
 
+::-webkit-scrollbar {
+    width: 1.2rem; /* largura da barra de rolagem */
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--var-primary-color); /* cor do preenchimento da barra de rolagem */
+    border-radius: 8px; 
+    border: none; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* cor de fundo do trilho da barra de rolagem */
+    border-radius: 1rem; /* bordas arredondadas para o trilho */
+  }
+
 header {
     z-index: 1;
     display: flex;
