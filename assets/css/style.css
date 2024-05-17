@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --var-white-color: #fbfbfe;
+    --var-black-color: #050315;
+    --var-home-bg: rgb(211, 248, 211);
+    --var-primary-color: #53c370;
+    --var-secondary-color: #8adfa0;
+    --var-terciary-color: #59dd7b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    color: var(--var-black-color);
+    background-color: var(--var-white-color);
+}
+
+.special {
+    color: var(--var-primary-color);
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: var(--var-white-color);
+}
+
+#logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--var-black-color);
+}
+
+#logo a h1 {
+    margin-left: 1rem;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: var(--var-black-color);
+    font-size: 2rem;
+    position: relative;
+}
+
+
+#menu ul li a::after {
+    content: '';
+    position: absolute;
+    height: 0.4rem;
+    min-width: 0;
+    background-color: var(--var-primary-color);
+    top: 2.5rem;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-in;
+}
+
+#menu ul li a:hover::after {
+    min-width: 100%;
+}
+
+main {
+    margin-top: 6rem;
+}
+
+#home {
+    min-height: 60vh;
+    background-color: var(--var-home-bg);
+    background: linear-gradient(var(--var-home-bg)93%, var(--var-white-color) 7%);
+    position: relative;
+}
+
+.content-home {
+    margin: 0 auto;
+    min-height: 60vh;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.home-write {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.home-write h1 {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.home-write h1::after {
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 11.5rem;
+    background-color: var(--var-primary-color);
+    bottom: 0;
+    left: 0;
+}
+
+.home-write p {
+    text-align: center;
+}
+
+.home-write a {
+    margin-top: 2rem;
+    background-color: var(--var-black-color);
+    color: var(--var-white-color);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+.home-write a:hover {
+    background-color: #050315b5;
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.home-img img {
+    max-width: 60vh;
+}
+
+#profissionais{
+    box-shadow: 1rem 1rem var(--var-black-color);
+    margin: 0 auto;
+    max-width: 80%;
+    min-height: 10rem;
+    background-color: var(--var-white-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#profissionais h3 {
+    color: var(--var-terciary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#profissionais form input {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    outline: none;
+}
+
+#profissionais form input:focus {
+    border: 0.3rem solid var(--var-primary-color);
+}
+
+#profissionais button {
+    padding: 1rem 2rem;
+    background-color: var(--var-primary-color);
+    border-radius: 2rem;
+    color: var(--var-white-color);
+    border: 0.2rem solid var(--var-secondary-color);
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 1s ease-in-out  ;
+    min-width: 15rem;
+}
+
+#profissionais button:hover {
+    background-color: var(--var-secondary-color);
+}
+
+#chat {
+    min-height: 60vh;
+    margin: 2rem auto 0;
+    background-color: var(--var-white-color);
+}
+
+.chat-content {
+    max-width: 90%;
+    min-height: 60vh;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.chat-img {
+    max-height: 60vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-img img {
+    max-width: 60vh;
+}
+
+.chat-write {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-write h1 .special {
+    color: var(--var-primary-color);
+}
+
+.chat-write p{
+    margin-top: 2rem;
+
+}
+
+.chat-write a {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    background-color: var(--var-secondary-color);
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--var-black-color);
+    transition: all 1s ease-in-out;
+}
+
+.chat-write a:hover {
+    background-color: var(--var-terciary-color);
+    color: var(--var-white-color);
+}
+
+#artigos {
+    min-height: 80vh;
+    background-color: var(--var-white-color);
+}
+
+.artigos-content {
+    min-height: 80vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.artigos-grid {
+    margin: 3rem 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5rem;
+    text-align: center;
+}
+
+.artigo-grid-content {
+    background-color: var(--var-home-bg);
+    padding: 3rem 3rem;
+    border-radius: 4rem;
+    display: grid;
+    grid-template-rows: repeat(3, 3rem 6.5rem);
+}
+
+.artigo-grid-content p {
+    margin: 1rem 0 3rem ;
+}
+
+.artigo-grid-content a {
+    background-color: var(--var-terciary-color);
+    color: var(--var-white-color);
+    font-weight: bold;
+    text-decoration: none;
+    min-height: 4rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    margin-top: 16rem;
+}
+
+.artigo-grid-content a:hover {
+    background-color: #53c370;
+}
+
+footer {
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: var(--var-black-color);
+    color: var(--var-white-color);
+}
