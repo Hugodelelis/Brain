@@ -39,7 +39,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--var-primary-color); /* cor do preenchimento da barra de rolagem */
-    border-radius: 8px; 
+    border-radius: 1rem; 
     border: none; 
 }
 
@@ -190,9 +190,19 @@ main {
 }
 
 #profissionais h3 {
-    color: var(--var-terciary-color);
+    color: var(--var-black-color);
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+#profissionais form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profissionais form label {
+    font-size: 2rem;
 }
 
 #profissionais form input {
@@ -275,7 +285,7 @@ main {
     text-decoration: none;
     font-weight: bold;
     color: var(--var-black-color);
-    transition: all 1s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 .chat-write a:hover {
