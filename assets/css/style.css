@@ -29,13 +29,15 @@ body {
     background-color: var(--var-white-color);
 }
 
+/* Home - Css */
+
 .special {
     color: var(--var-primary-color);
 }
 
 ::-webkit-scrollbar {
     width: 1.2rem; /* largura da barra de rolagem */
-  }
+}
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--var-primary-color); /* cor do preenchimento da barra de rolagem */
@@ -46,7 +48,7 @@ body {
 ::-webkit-scrollbar-track {
     background: #f1f1f1; /* cor de fundo do trilho da barra de rolagem */
     border-radius: 1rem; /* bordas arredondadas para o trilho */
-  }
+}
 
 header {
     z-index: 1;
@@ -213,7 +215,7 @@ main {
 }
 
 #profissionais form input:focus {
-    border: 0.3rem solid var(--var-primary-color);
+    border: 0.2rem solid var(--var-primary-color);
 }
 
 #profissionais button {
@@ -349,3 +351,6 @@ footer {
     background-color: var(--var-black-color);
     color: var(--var-white-color);
 }
+
+/* Login - Css */
+
