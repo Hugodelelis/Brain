@@ -1,14 +1,15 @@
-@charset "UTF-8";
+@comrset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --var-white-color: #fbfbfe;
-    --var-black-color: #050315;
-    --var-home-bg: rgb(211, 248, 211);
-    --var-primary-color: #53c370;
-    --var-secondary-color: #8adfa0;
-    --var-terciary-color: #59dd7b;
+    --white-color: #fbfbfe;
+    --black-color: #050315;
+    --home-bg: rgb(211, 248, 211);
+    --primary-color: #53c370;
+    --secondary-color: #8adfa0;
+    --terciary-color: #59dd7b;
+    --gray-color: rgba(128, 128, 128, 0.215);
 }
 
 * {
@@ -25,14 +26,14 @@ html {
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
-    color: var(--var-black-color);
-    background-color: var(--var-white-color);
+    color: var(--black-color);
+    background-color: var(--white-color);
 }
 
 /* Home - Css */
 
 .special {
-    color: var(--var-primary-color);
+    color: var(--primary-color);
 }
 
 ::-webkit-scrollbar {
@@ -40,7 +41,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--var-primary-color); /* cor do preenchimento da barra de rolagem */
+    background-color: var(--primary-color); /* cor do preenchimento da barra de rolagem */
     border-radius: 1rem; 
     border: none; 
 }
@@ -59,7 +60,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 3rem;
-    background-color: var(--var-white-color);
+    background-color: var(--white-color);
 }
 
 #logo a {
@@ -67,7 +68,7 @@ header {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--var-black-color);
+    color: var(--black-color);
 }
 
 #logo a h1 {
@@ -84,9 +85,25 @@ header {
 
 #menu ul li a {
     text-decoration: none;
-    color: var(--var-black-color);
+    color: var(--black-color);
     font-size: 2rem;
     position: relative;
+}
+
+#menu ul li .user img {
+    align-self: center;
+    padding: 0.5rem;
+    transition: all 1s ease;
+    margin-top: 0.5rem;
+}
+
+#menu ul li .user img:hover {
+    background-color: var(--gray-color);
+    border-radius: 2rem;
+}
+
+#menu ul li .user:hover::after{
+    min-width: 0;
 }
 
 
@@ -95,7 +112,7 @@ header {
     position: absolute;
     height: 0.4rem;
     min-width: 0;
-    background-color: var(--var-primary-color);
+    background-color: var(--primary-color);
     top: 2.5rem;
     bottom: 0;
     left: 0;
@@ -107,13 +124,13 @@ header {
 }
 
 main {
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
 
 #home {
     min-height: 60vh;
-    background-color: var(--var-home-bg);
-    background: linear-gradient(var(--var-home-bg)93%, var(--var-white-color) 7%);
+    background-color: var(--home-bg);
+    background: linear-gradient(var(--home-bg)93%, var(--white-color) 7%);
     position: relative;
 }
 
@@ -130,7 +147,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 6rem;
 }
 
 .home-write h1 {
@@ -143,7 +160,7 @@ main {
     position: absolute;
     height: 0.5rem;
     width: 11.5rem;
-    background-color: var(--var-primary-color);
+    background-color: var(--primary-color);
     bottom: 0;
     left: 0;
 }
@@ -154,8 +171,8 @@ main {
 
 .home-write a {
     margin-top: 2rem;
-    background-color: var(--var-black-color);
-    color: var(--var-white-color);
+    background-color: var(--black-color);
+    color: var(--white-color);
     font-weight: bold;
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -179,11 +196,11 @@ main {
 }
 
 #profissionais{
-    box-shadow: 1rem 1rem var(--var-black-color);
+    box-shadow: 1rem 1rem var(--black-color);
     margin: 0 auto;
     max-width: 80%;
     min-height: 10rem;
-    background-color: var(--var-white-color);
+    background-color: var(--white-color);
     padding: 1rem 2rem;
     display: flex;
     justify-content: center;
@@ -192,7 +209,7 @@ main {
 }
 
 #profissionais h3 {
-    color: var(--var-black-color);
+    color: var(--black-color);
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -201,6 +218,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: ;
 }
 
 #profissionais form label {
@@ -210,37 +228,39 @@ main {
 #profissionais form input {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    border: 0.2rem solid var(--gray-color);
+    background-color: var(--gray-color);
     outline: none;
 }
 
 #profissionais form input:focus {
-    border: 0.2rem solid var(--var-primary-color);
+    border: 0.2rem solid var(--primary-color);
 }
 
-#profissionais button {
+#profissionais form button {
     padding: 1rem 2rem;
-    background-color: var(--var-primary-color);
+    background-color: var(--primary-color);
     border-radius: 2rem;
-    color: var(--var-white-color);
-    border: 0.2rem solid var(--var-secondary-color);
+    color: var(--white-color);
+    border: 0.2rem solid var(--secondary-color);
     cursor: pointer;
     font-weight: bold;
-    transition: all 1s ease-in-out  ;
+    transition: all 1s ease-in-out;
+    margin-left: 2rem;
     min-width: 15rem;
 }
 
 #profissionais button:hover {
-    background-color: var(--var-secondary-color);
+    background-color: var(--secondary-color);
 }
 
-#chat {
+#comunidade {
     min-height: 60vh;
     margin: 2rem auto 0;
-    background-color: var(--var-white-color);
+    background-color: var(--white-color);
 }
 
-.chat-content {
+.comunidade-content {
     max-width: 90%;
     min-height: 60vh;
     padding: 2rem 3rem;
@@ -249,7 +269,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.chat-img {
+.comunidade-img {
     max-height: 60vh;
     padding: 2rem;
     display: flex;
@@ -257,11 +277,11 @@ main {
     align-items: center;
 }
 
-.chat-img img {
+.comunidade-img img {
     max-width: 60vh;
 }
 
-.chat-write {
+.comunidade-write {
     text-align: center;
     padding: 2rem;
     display: flex;
@@ -270,34 +290,34 @@ main {
     align-items: center;
 }
 
-.chat-write h1 .special {
-    color: var(--var-primary-color);
+.comunidade-write h1 .special {
+    color: var(--primary-color);
 }
 
-.chat-write p{
+.comunidade-write p{
     margin-top: 2rem;
 
 }
 
-.chat-write a {
+.comunidade-write a {
     margin-top: 3rem;
     padding: 1rem 2rem;
-    background-color: var(--var-secondary-color);
+    background-color: var(--secondary-color);
     border-radius: 2rem;
     text-decoration: none;
     font-weight: bold;
-    color: var(--var-black-color);
+    color: var(--black-color);
     transition: all 0.6s ease-in-out;
 }
 
-.chat-write a:hover {
-    background-color: var(--var-terciary-color);
-    color: var(--var-white-color);
+.comunidade-write a:hover {
+    background-color: var(--terciary-color);
+    color: var(--white-color);
 }
 
 #artigos {
     min-height: 80vh;
-    background-color: var(--var-white-color);
+    background-color: var(--white-color);
 }
 
 .artigos-content {
@@ -316,7 +336,7 @@ main {
 }
 
 .artigo-grid-content {
-    background-color: var(--var-home-bg);
+    background-color: var(--home-bg);
     padding: 3rem 3rem;
     border-radius: 4rem;
     display: grid;
@@ -328,8 +348,8 @@ main {
 }
 
 .artigo-grid-content a {
-    background-color: var(--var-terciary-color);
-    color: var(--var-white-color);
+    background-color: var(--terciary-color);
+    color: var(--white-color);
     font-weight: bold;
     text-decoration: none;
     min-height: 4rem;
@@ -348,9 +368,6 @@ footer {
     max-width: 100%;
     text-align: center;
     padding: 2rem 3rem;
-    background-color: var(--var-black-color);
-    color: var(--var-white-color);
+    background-color: var(--black-color);
+    color: var(--white-color);
 }
-
-/* Login - Css */
-

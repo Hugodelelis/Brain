@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --white-color: #fbfbfe;
+    --black-color: #050315;
+    --home-bg: rgb(211, 248, 211);
+    --primary-color: #53c370;
+    --secondary-color: #8adfa0;
+    --terciary-color: #59dd7b;
+    --gray-color: rgba(128, 128, 128, 0.215);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    gap: 3rem;
+    background-color: var(--white-color);
+}
+
+#logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+#logo a h1 {
+    margin-left: 1rem;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+#menu ul li .user img {
+    align-self: center;
+    padding: 0.5rem;
+    transition: all 1s ease;
+    margin-top: 0.5rem;
+}
+
+#menu ul li .user img:hover {
+    background-color: var(--gray-color);
+    border-radius: 2rem;
+}
+
+main {
+    margin-top: 7rem;
+    min-height: 82.2vh;
+    display: grid;
+    place-content: center center;
+}
+
+.container {
+    background-color: var(--secondary-color);
+    border-radius: 3rem;
+    box-shadow: 0 0.5rem 1.5rem var(--black-color);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 76.8rem;
+    max-width: 100%;
+    min-height: 48rem;
+}
+
+.form-container.sign-up {
+    min-height: 48rem;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+
+.form-container.sign-up form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    min-height: 48rem;
+    min-width: 100%;
+}
+
+.form-container.sign-up form .social-icons a {
+    border: 0.1rem solid var(--black-color);
+    color: var(--black-color);
+    padding: 1.5rem 2rem;
+    border-radius: 20%;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.form-container.sign-up form .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-container.sign-up form .inputs input {
+    background-color: var(--gray-color);
+    border: none;
+    padding: 1rem 2rem;
+    min-width: 30rem;
+}
+
+.form-container.sign-up form .inputs button {
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 2rem;
+    min-width: 20rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+}
+
+.form-container.sign-up form .inputs button:hover {
+    background-color: var(--terciary-color);
+}
+
+.form-container-image {
+    display: grid;
+    place-content: center center;
+    padding: 2rem;
+}
+
+.form-container-image img {
+    max-width: 100%;
+}
+
+footer {
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
