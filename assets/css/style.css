@@ -218,7 +218,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: ;
 }
 
 #profissionais form label {
@@ -234,7 +233,7 @@ main {
 }
 
 #profissionais form input:focus {
-    border: 0.2rem solid var(--primary-color);
+    border: 0.2rem solid var(--black-color);
 }
 
 #profissionais form button {
