@@ -63,18 +63,19 @@ header {
     list-style: none;
 }
 
-#menu ul li .user img {
-    align-self: center;
-    padding: 0.5rem;
+#menu ul li a .bi.bi-person-circle {
+    color: black;
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 3.5rem;
     transition: all 1s ease;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
 }
 
-#menu ul li .user img:hover {
+#menu ul li .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
-    border-radius: 2rem;
+    border-radius: 50%;
 }
-
 main {
     margin-top: 7rem;
     min-height: calc(100vh - 12.9rem);
