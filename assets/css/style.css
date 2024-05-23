@@ -75,6 +75,11 @@ header {
     margin-left: 1rem;
 }
 
+#logo a .bi {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
 #menu ul {
     display: flex;
     justify-content: center;

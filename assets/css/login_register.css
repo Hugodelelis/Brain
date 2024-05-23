@@ -51,6 +51,11 @@ header {
     color: var(--black-color);
 }
 
+#logo a .bi {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
 #logo a h1 {
     margin-left: 1rem;
 }
