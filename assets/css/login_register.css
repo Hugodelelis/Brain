@@ -41,7 +41,7 @@ header {
     padding: 1rem 3rem;
     gap: 3rem;
     background-color: var(--white-color);
-    border-bottom: 0.5rem solid var(--gray-color);
+    border-bottom: 0.2rem solid var(--gray-color);
 }
 
 #logo a {
