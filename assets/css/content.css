@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --white-color: #fbfbfe;
+    --black-color: #050315;
+    --home-bg: rgb(211, 248, 211);
+    --primary-color: #53c370;
+    --secondary-color: #8adfa0;
+    --terciary-color: #59dd7b;
+    --gray-color: rgba(128, 128, 128, 0.215);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+.special {
+    color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+    width: 1.2rem; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* cor do preenchimento da barra de rolagem */
+    border-radius: 1rem; 
+    border: none; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* cor de fundo do trilho da barra de rolagem */
+    border-radius: 1rem; /* bordas arredondadas para o trilho */
+}
+
+.section {
+    min-height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: var(--white-color);
+    border-bottom: 0.5rem solid var(--gray-color);
+}
+
+#logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+#logo a h1 {
+    margin-left: 1rem;
+}
+
+#logo a .bi {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 2rem;
+    position: relative;
+}
+
+#menu ul li a .bi.bi-person-circle {
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 3.5rem;
+    transition: all 1s ease;
+    margin-top: 0.8rem;
+}
+
+#menu ul li .bi.bi-person-circle:hover {
+    background-color: var(--gray-color);
+    border-radius: 50%;
+}
+
+#menu ul li .user:hover::after{
+    min-width: 0;
+}
+
+#menu ul li a::after {
+    content: '';
+    position: absolute;
+    height: 0.4rem;
+    min-width: 0;
+    background-color: var(--primary-color);
+    top: 2.5rem;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-in;
+}
+
+#menu ul li a:hover::after {
+    min-width: 100%;
+}
+
+main {
+    margin-top: 6rem;
+}
+
+footer {
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.init-content {
+    padding: 3rem;
+    background-color: var(--home-bg);
+    min-height: 20rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50rem);
+    justify-content: center;
+    align-items: center;
+}
+
+.init-content .image {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.init-content .image img{
+    max-width: 30rem;
+}
+
+.init-content .init-write {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.init-content .init-write h1 {
+    font-size: 4rem;
+}
+
+.init-content .init-write span {
+    color: var(--gray-color);
+    font-size: 2rem;
+}
+
+.init-content .init-write ul {
+    list-style: none;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+}
+
+.init-content .init-write ul li {
+    margin-left: 1rem;
+}
+
+.init-content .init-write ul li a {
+    padding: 1rem 2rem;
+    background-color: var(--white-color);
+    border-radius: 2rem;
+    color: var(--black-color);
+    text-decoration: none;
+    transition: all 0.6s ease-in-out;
+}
+
+.init-content .init-write ul li a:hover {
+    background-color: var(--gray-color);
+}
+
+#artigo {
+    padding: 2rem;
+}
+
+#artigo h2 {
+    color: var(--primary-color);
+}
+
+#artigo p {
+    margin: 1rem 0 2rem;
+    text-align: justify;
+}
+
+#artigo iframe {
+    margin-left: 2rem;
+    border-radius: 2rem;
+}
+
+#livros {
+    padding:2rem;
+    min-height: 40rem;
+}
