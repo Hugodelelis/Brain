@@ -220,8 +220,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
-}
+    margin: 0 auto 3rem;
+} 
 
 aside {
     margin-top: 5rem;
