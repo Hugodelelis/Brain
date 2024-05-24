@@ -146,7 +146,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    margin: auto 0;
+    gap: 1.5rem;
 }
 
 .init .image img {
@@ -167,6 +168,7 @@ main {
     max-width: 60%;
     min-height: 100vh;
     border: 0.2rem solid var(--gray-color);
+    border-top: 0;
 }
 
 .display-content .content h2 {
@@ -176,6 +178,7 @@ main {
 .display-content .content p {
     margin-bottom: 1rem;
     text-align: justify;
+    line-height: 1.5;
 }
 
 .display-content .content .bar-content {
@@ -202,8 +205,20 @@ main {
     margin: 2rem 2rem 3rem 0;
     border: 0.2rem solid black;
     border-radius: 2rem;
-    box-shadow: 1rem 1rem 1rem black;
-    
+    box-shadow: 1rem 1rem 1rem black;   
+}
+
+.swiper {
+    min-height: 30vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    min-height: 30vh;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 aside {

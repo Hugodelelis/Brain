@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon/favi.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/content.css">
     <title>Brain - Depressão</title>
 </head>
@@ -44,8 +45,6 @@
                     prevalência de depressão na rede de atenção primária de saúde é 10,4%, isoladamente ou associada a um transtorno físico. </p>
                 <p>De acordo com a OMS, a depressão situa-se em 4º lugar entre as principais causas de ônus, respondendo por 4,4% dos ônus acarretados por todas as doenças durante a vida. Ocupa 1º lugar quando considerado o 
                     tempo vivido com incapacitação ao longo da vida (11,9%). A época comum do aparecimento é o final da 3ª década da vida, mas pode começar em qualquer idade.</p>
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/T2XLwjy65LA?si=J3LNj7QUv7mmBD4P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="bar-content"><p>Estudos mostram prevalência ao longo da vida em até 20% nas mulheres e 12% para os homens.</p></div>      
                 <h2 id="causas-menu">Fatores de risco</h2> 
                 <ul>
                     <li>Histórico familiar;</li>
@@ -96,7 +95,16 @@
                     <li>Rotina de sono regular;</li>
                     <li>Não interromper tratamento sem orientação médica</li>
                 </ul>
-                <iframe width="500" height="300" src="https://www.youtube.com/embed/NVQ-8vGA4wc?si=_7uopsJYJbcABZQO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>Videos</h2>
+                <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><iframe width="400" height="215" src="https://www.youtube.com/embed/NVQ-8vGA4wc?si=vpT7zqcQM3o0GSwL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="400" height="215" src="https://www.youtube.com/embed/T2XLwjy65LA?si=oOz_2yBXrXyO_cdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="400" height="215" src="https://www.youtube.com/embed/w6JTXuWed7g?si=00p7pxyYrF3g10Ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </section>
             <aside>
                 <h3>Conteúdos da pagina</h3>
@@ -106,7 +114,7 @@
                     <li><a href="#causas-menu">Causas</a></li>
                     <li><a href="#sintomas-menu">Sintomas</a></li>
                     <li><a href="#prevencao-menu">Prevenção</a></li>
-                    <li><a href="#">Livros</a></li>
+                    <li><a href="#videos-menu">Videos</a></li>
                 </ul>
             </aside>
         </div>
@@ -114,5 +122,16 @@
     <footer>
         <p>© 2024 Brain.com</p>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
 </body>
 </html>
