@@ -210,7 +210,7 @@ main {
 
 .swiper {
     min-height: 30vh;
-    max-width: 70rem;
+    max-width: 60rem;
 }
 
 .swiper-slide {
@@ -220,7 +220,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 3rem;
+    margin: 0 0.27rem 3rem;
 } 
 
 aside {
