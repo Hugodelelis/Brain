@@ -181,14 +181,6 @@ main {
     line-height: 1.5;
 }
 
-.display-content .content .bar-content {
-    border-radius: 2rem;
-    padding: 2rem;
-    margin: 2rem 0;
-    font-weight: bold;
-    background-color: var(--gray-color);
-}
-
 .display-content .content .bar-content p {
     text-align: center;
 }
@@ -227,7 +219,7 @@ aside {
     margin-top: 5rem;
     background-color: var(--home-bg);
     border-radius: 2rem;
-    max-height: 30rem;
+    max-height: 34rem;
     min-width: 30rem;
     position: -webkit-sticky; 
     position: sticky;
