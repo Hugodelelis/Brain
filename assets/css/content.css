@@ -96,15 +96,16 @@ header {
     position: relative;
 }
 
-#menu ul li a .bi.bi-person-circle {
+.user .bi.bi-person-circle {
     text-align: center;
     padding: 0.4rem;
     font-size: 3.5rem;
     transition: all 1s ease;
     margin-top: 0.8rem;
+    color: var(--black-color);
 }
 
-#menu ul li .bi.bi-person-circle:hover {
+.user .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
     border-radius: 50%;
 }
@@ -135,18 +136,17 @@ main {
 
 .init {
     min-height: 20rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
     padding: 2rem;
     background-color: var(--home-bg);
-    gap: 3rem;
 }
 
-.init .image {
+.center {
+    padding: 2rem;
+    max-width: 70%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
 .init .image img {
@@ -159,7 +159,6 @@ main {
 
 .display-content {
     display: flex;
-    position: absolute;
 }
 
 .display-content .content {
@@ -199,7 +198,7 @@ main {
 }
 
 .display-content .content .videos iframe {
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem 0;
     border: 0.2rem solid black;
     border-radius: 2rem;
     box-shadow: 1rem 1rem 1rem black;
@@ -242,9 +241,10 @@ aside ul li a:hover {
     background-color: #05031556;
 }
 
-
-
-
-
-
-
+footer {
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}

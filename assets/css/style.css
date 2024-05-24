@@ -96,15 +96,16 @@ header {
     position: relative;
 }
 
-#menu ul li a .bi.bi-person-circle {
+.user .bi.bi-person-circle {
     text-align: center;
     padding: 0.4rem;
     font-size: 3.5rem;
     transition: all 1s ease;
     margin-top: 0.8rem;
+    color: var(--black-color);
 }
 
-#menu ul li .bi.bi-person-circle:hover {
+.user .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
     border-radius: 50%;
 }
