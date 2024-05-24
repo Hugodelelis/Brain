@@ -165,7 +165,8 @@ main {
     margin: 0 10rem;
     padding: 0 3rem;
     max-width: 60%;
-    min-height: 150vh;
+    min-height: 100vh;
+    border: 0.2rem solid var(--gray-color);
 }
 
 .display-content .content h2 {
