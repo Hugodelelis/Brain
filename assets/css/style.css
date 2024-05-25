@@ -107,7 +107,7 @@ header {
 
 .user .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 #menu ul li .user:hover::after{
@@ -356,7 +356,7 @@ main {
     font-size: 3rem;
     padding: 2rem;
     border: 0.2rem solid var(--black-color);
-    border-radius: 50%;
+    border-radius: 30%;
     max-width: 10rem;
     margin: auto;
 }
