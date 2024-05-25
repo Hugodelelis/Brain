@@ -347,11 +347,10 @@ main {
     padding: 1.5rem 2rem;
     border-radius: 4rem;
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 6em);
     place-content: center center;
     gap: 2rem;
     box-shadow: 1rem 1rem 2rem var(--black-color);
-    border: 0.1rem solid var(--black-color);
 }
 
 .artigo-grid-content .bi.bi-slack {
@@ -378,14 +377,13 @@ main {
     color: var(--white-color);
     font-weight: bold;
     text-decoration: none;
-    min-height: 4rem;
+    max-height: 4rem;
     min-width: 80%;
     padding: 1rem 2rem;
     border-radius: 2rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
     transition: all 0.4s ease-in-out;
-    margin-bottom: 2rem;
 }
 
 .artigo-grid-content a:hover {
