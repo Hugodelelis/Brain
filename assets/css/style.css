@@ -350,7 +350,7 @@ main {
     grid-template-rows: repeat(3, 6em);
     place-content: center center;
     gap: 2rem;
-    box-shadow: 1rem 1rem 2rem var(--black-color);
+    box-shadow: 0rem 1rem 2rem var(--black-color);
 }
 
 .artigo-grid-content .bi.bi-slack {
