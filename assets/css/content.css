@@ -140,7 +140,7 @@ main {
     background-color: var(--home-bg);
 }
 
-.center {
+.center div {
     padding: 2rem;
     max-width: 70%;
     display: flex;
@@ -152,6 +152,11 @@ main {
 
 .init .image img {
     max-width: 20rem;
+}
+
+.init .init-write {
+    display: flex;
+    flex-direction: column;
 }
 
 .init .init-write h1{
