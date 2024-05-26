@@ -136,7 +136,7 @@ main {
 
 .center div {
     padding: 2rem;
-    max-width: 70%;
+    max-width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,9 +162,9 @@ main {
 }
 
 .display-content .content {
-    margin: 0 10rem;
+    margin: 0 10rem 0 20rem;
     padding: 0 3rem;
-    max-width: 60%;
+    max-width: 45%;
     min-height: 100vh;
     border: 0.2rem solid var(--gray-color);
     border-top: 0;
