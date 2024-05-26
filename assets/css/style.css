@@ -213,7 +213,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 #profissionais h3 {
