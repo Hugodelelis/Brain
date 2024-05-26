@@ -74,13 +74,13 @@ header {
     text-align: center;
     padding: 0.4rem;
     font-size: 3.5rem;
-    transition: all 1s ease;
     margin-top: 0.8rem;
+    transition: all 0.4s ease;
 }
 
 #menu ul li .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
-    border-radius: 50%;
+    border-radius: 20%;
 }
 main {
     margin-top: 7rem;
@@ -153,7 +153,7 @@ main {
     min-width: 20rem;
     cursor: pointer;
     font-weight: bold;
-    transition: all 1s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .form-container.sign-up form .inputs button:hover {

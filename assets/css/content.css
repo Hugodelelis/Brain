@@ -45,12 +45,6 @@ body {
     border-radius: 1rem; /* bordas arredondadas para o trilho */
 }
 
-.section {
-    min-height: 100vh;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
 header {
     z-index: 3;
     display: flex;
@@ -100,14 +94,14 @@ header {
     text-align: center;
     padding: 0.4rem;
     font-size: 3.5rem;
-    transition: all 1s ease;
     margin-top: 0.8rem;
     color: var(--black-color);
+    transition: all 0.4s ease;
 }
 
 .user .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 #menu ul li .user:hover::after{
@@ -270,7 +264,7 @@ aside ul li a {
     color: white;
     border-radius: 2rem;
     text-decoration: none;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 aside ul li a:hover {
