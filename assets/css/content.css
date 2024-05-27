@@ -132,11 +132,14 @@ main {
     min-height: 20rem;
     padding: 2rem;
     background-color: var(--home-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center div {
     padding: 2rem;
-    max-width: 85%;
+    max-width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
