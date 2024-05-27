@@ -133,15 +133,18 @@ main {
     padding: 2rem;
     background-color: var(--home-bg);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
+.center {
+    margin-left: 32rem;
+}
+
 .center div {
-    padding: 2rem;
-    max-width: 90%;
+    padding: 2rem;  
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin: auto 0;
     gap: 1.5rem;
@@ -165,7 +168,7 @@ main {
 }
 
 .display-content .content {
-    margin: 0 10rem 0 40rem;
+    margin: 0 15rem 0 30rem ;
     padding: 0 3rem;
     max-width: 45%;
     min-height: 100vh;
