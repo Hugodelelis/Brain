@@ -5,7 +5,7 @@
 :root {
     --white-color: #fbfbfe;
     --black-color: #050315;
-    --home-bg: rgb(211, 248, 211);
+    --bg-light-green: rgb(211, 248, 211);
     --primary-color: #53c370;
     --secondary-color: #8adfa0;
     --terciary-color: #59dd7b;
@@ -136,8 +136,8 @@ main {
 
 #home {
     min-height: 60vh;
-    background-color: var(--home-bg);
-    background: linear-gradient(var(--home-bg)93%, var(--white-color) 7%);
+    background-color: var(--bg-light-green);
+    background: linear-gradient(var(--bg-light-green)93%, var(--white-color) 7%);
     position: relative;
 }
 
@@ -343,7 +343,7 @@ main {
 }
 
 .artigo-grid-content {
-    background-color: var(--home-bg);
+    background-color: var(--bg-light-green);
     padding: 1.5rem 2rem;
     border-radius: 4rem;
     display: grid;
