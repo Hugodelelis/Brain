@@ -132,7 +132,6 @@ main {
     margin: 10rem auto 0 ;
     max-width: 80%;
     display: flex;
-    gap: 1rem;
 }
 
 .swiper {
@@ -223,7 +222,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .content-artigo .init-banner img {
