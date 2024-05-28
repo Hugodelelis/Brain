@@ -125,154 +125,122 @@ header {
 }
 
 main {
-    margin-top: 5.3rem;
+    margin-top: 6.5rem;
 }
 
-.init {
-    min-height: 20rem;
-    max-width: 100%;
-    padding: 2rem;
-    background-color: var(--home-bg);
+#content {
+    margin: 10rem auto 0 ;
+    max-width: 80%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.init .center div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 3rem;
-    gap: 2rem;
-}
-
-.init .image img {
-    max-width: 20rem;
-}
-
-.init .init-write {
-    display: flex;
-    flex-direction: column;
-}
-
-.init .init-write h1{
-    font-size: 5rem;
-} 
-
-.display-content {
-    display: flex;
-}
-
-.display-content .content {
-    margin: 0 5rem 0 auto ;
-    padding: 0 3rem;
-    max-width: 50%;
-    min-height: 100vh;
-    border: 0.2rem solid var(--gray-color);
-    border-top: 0;
-    border-bottom: 0;
-}
-
-.display-content .content h2 {
-    color: var(--primary-color);
-    margin: 4rem 0 1rem;
-}
-.display-content .content p {
-    margin-bottom: 1rem;
-    text-align: justify;
-    line-height: 1.5;
-}
-
-.display-content .content .bar-content p {
-    text-align: center;
-}
-
-.display-content .content ul {
-    margin-left: 2rem;
-}
-
-.display-content .content ul li {
-    margin-bottom: 0.5rem;
-}
-
-.display-content .content iframe {
-    margin: 2rem 2rem 3rem 0;
-    border: 0.2rem solid black;
-    border-radius: 2rem;
-    box-shadow: 1rem 1rem 1rem black;   
+    gap: 1rem;
 }
 
 .swiper {
-    min-height: 30vh;
+    max-height: 45rem;
     max-width: 60rem;
 }
 
 .swiper-slide {
-    text-align: center;
-    min-height: 30vh;
-    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0.27rem 2rem;
-} 
+}
 
-.swiper-slide img {
-    border: 0.2rem solid var(--black-color);
+.swiper-slide iframe {
+    border: 0.2rem solid black;
 }
 
 .swiper-slide a {
     margin-top: 1rem;
-    color: var(--white-color);
-    padding: 1rem 2rem;
-    background-color: var(--black-color);
+    padding: 1rem 1.5rem;
     text-decoration: none;
-    transition: all 0.6s ease-in-out;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    transition: all 0.4s ease-in;
 }
 
 .swiper-slide a:hover {
-    background-color: #050315ad;
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
 
-aside {
-    margin: 5rem 5rem 0 0;
+.artigo-menu {
     background-color: var(--home-bg);
-    border-radius: 2rem;
-    max-height: 34rem;
-    min-width: 30rem;
-    position: -webkit-sticky; 
     position: sticky;
-    top: 10rem; 
-    text-align: center;
-    padding: 2rem 2rem;
-    box-shadow: 1rem 1rem 1rem var(--black-color);
+    min-width: 25%;
+    padding: 2rem 3rem;
+    top: 5rem;
+    max-height: 41rem;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    gap: 2rem;
+    align-items: center;
 }
 
-aside h3 {
+.artigo-menu h3 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    color: var(--black-color);
 }
 
-aside ul {
+.artigo-menu ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    align-items: center;
 }
 
-aside ul li a {
-    padding: 0.5rem 1rem;
-    background-color: var(--black-color);
-    color: white;
-    border-radius: 2rem;
+.artigo-menu ul li a {
     text-decoration: none;
-    transition: all 0.4s ease-in-out;
+    color: var(--black-color);
+    transition: all 0.4s ease;
 }
 
-aside ul li a:hover {
-    background-color: #05031556;
+.artigo-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.artigo-menu ul li .bi {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+
+.content-artigo {
+    min-width: 65%;
+    position: sticky;
+    background-color: var(--white-color);
+    padding: 2rem 3rem;
+    margin-bottom: 0;
+}
+
+.content-artigo .init-banner {
+    max-height: 20rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-artigo .init-banner img {
+    max-width: 20rem;
+}
+
+.content-artigo .banner-write h1 {
+    font-size: 4rem;
+}
+
+.content-artigo h2 {
+    margin: 2rem 0 1rem 0;
+    color: var(--primary-color);
+}
+
+.content-artigo p {
+    line-height: 1.5;
+    text-align: justify;
 }
 
 footer {
