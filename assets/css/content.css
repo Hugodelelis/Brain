@@ -212,7 +212,7 @@ main {
     min-width: 65%;
     position: sticky;
     background-color: var(--white-color);
-    padding: 2rem 3rem;
+    padding: 2rem 5rem;
     margin-bottom: 5rem;
 }
 
@@ -243,6 +243,10 @@ main {
 .content-artigo p {
     line-height: 1.5;
     text-align: justify;
+}
+
+.content-artigo ul li {
+    margin-bottom: 1rem;
 }
 
 footer {
