@@ -147,7 +147,7 @@ main {
     align-items: center;
 }
 
-.swiper-slide iframe {
+.swiper-slide iframe, .swiper-slide img {
     border: 0.2rem solid black;
 }
 
@@ -171,7 +171,7 @@ main {
     min-width: 25%;
     padding: 2rem 3rem;
     top: 5rem;
-    max-height: 41rem;
+    max-height: 35rem;
     top: 10rem;
     display: flex;
     flex-direction: column;
@@ -189,7 +189,7 @@ main {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -213,12 +213,14 @@ main {
     position: sticky;
     background-color: var(--white-color);
     padding: 2rem 3rem;
-    margin-bottom: 0;
+    margin-bottom: 5rem;
 }
 
 .content-artigo .init-banner {
+    background-color: var(--home-bg);
+    border-radius: 4rem;
     max-height: 20rem;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
