@@ -55,7 +55,7 @@ header {
     align-items: center;
     padding: 1rem 3rem;
     background-color: var(--white-color);
-    border-bottom: 0.2rem solid var(--gray-color);
+    box-shadow: 0.2rem 0.2rem 1rem var(--gray-color);
 }
 
 #logo a {
