@@ -179,7 +179,7 @@ footer {
     color: var(--white-color);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 568px) {
     main {
         display: flex;
         justify-content: center;
@@ -191,6 +191,7 @@ footer {
         grid-template-rows: repeat(2, 1fr);
         margin: 2rem;
         max-width: 100%;
+        border-radius: 0;
     }
 }
 
