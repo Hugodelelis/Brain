@@ -70,17 +70,16 @@ header {
 }
 
 #menu ul li a .bi.bi-person-circle {
-    color: black;
     text-align: center;
-    padding: 0.4rem;
+    padding: 0.3rem 0.5rem;
     font-size: 3.5rem;
-    margin-top: 0.8rem;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
+    color: var(--black-color);
 }
 
 #menu ul li .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
-    border-radius: 20%;
+    border-radius: 30%;
 }
 
 main {

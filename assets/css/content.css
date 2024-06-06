@@ -92,16 +92,15 @@ header {
 
 .user .bi.bi-person-circle {
     text-align: center;
-    padding: 0.4rem;
+    padding: 0.3rem 0.5rem;
     font-size: 3.5rem;
-    margin-top: 0.8rem;
+    transition: all 0.2s ease;
     color: var(--black-color);
-    transition: all 0.4s ease;
 }
 
 .user .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
-    border-radius: 20%;
+    border-radius: 30%;
 }
 
 #menu ul li .user:hover::after{

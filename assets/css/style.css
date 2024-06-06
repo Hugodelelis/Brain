@@ -98,16 +98,15 @@ header {
 
 .user .bi.bi-person-circle {
     text-align: center;
-    padding: 0.4rem;
+    padding: 0.3rem 0.5rem;
     font-size: 3.5rem;
-    transition: all 1s ease;
-    margin-top: 0.8rem;
+    transition: all 0.2s ease;
     color: var(--black-color);
 }
 
 .user .bi.bi-person-circle:hover {
     background-color: var(--gray-color);
-    border-radius: 20%;
+    border-radius: 30%;
 }
 
 #menu ul li .user:hover::after{
@@ -138,13 +137,12 @@ main {
     min-height: 60vh;
     background-color: var(--bg-light-green);
     background: linear-gradient(var(--bg-light-green)93%, var(--white-color) 7%);
-    position: relative;
 }
 
 .content-home {
     margin: 0 auto;
     min-height: 60vh;
-    width: 90%;
+    max-width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -395,3 +393,49 @@ footer {
     background-color: var(--black-color);
     color: var(--white-color);
 }
+
+
+@media (max-width: 568px) {
+    .content-home {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2);
+        place-content: center center;
+        gap: 3rem;
+    }
+
+    .home-write {
+        margin-top: 5rem;
+        padding: 1rem;
+    }
+
+    #profissionais{
+        flex-direction: column;
+    }
+
+    #profissionais label {
+        display: none;
+    }
+
+    #profissionais h3 {
+        font-size: 2rem;
+    }
+
+    .comunidade-content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        place-content: center center;
+    }
+
+    .artigos-content h1 {
+        text-align: center;
+    }
+
+    .artigos-grid {
+        margin: 3rem 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+}
+
