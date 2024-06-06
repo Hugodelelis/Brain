@@ -188,17 +188,13 @@ footer {
 
     .container{
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 48rem);
+        grid-template-rows: repeat(1, 1fr);
         margin: 2rem;
         max-width: 100%;
         align-items: center;
         justify-content: center;
     }
     
-    .form-container.sign-up {  
-        padding: 20rem;
-    }
-
     .form-container-image {
         display: none;
     }
