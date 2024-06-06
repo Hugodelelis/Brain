@@ -188,10 +188,12 @@ footer {
 
     .container{
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50rem);
         margin: 2rem;
         max-width: 100%;
         border-radius: 0;
+        align-items: center;
+        justify-content: center;
     }
 }
 
