@@ -398,8 +398,9 @@ footer {
 @media (max-width: 568px) {
     .content-home {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2);
+        grid-template-rows: repeat(2, 1fr, 400px);
         place-content: center center;
+        min-height: 100%;
         gap: 3rem;
     }
 
@@ -408,8 +409,17 @@ footer {
         padding: 1rem;
     }
 
+    .home-write p {
+        margin: 0 10rem;
+    }
+
+    .home-img img {
+        padding: 0 9rem;
+    }
+
     #profissionais{
         flex-direction: column;
+        max-width: 90%;
     }
 
     #profissionais label {
@@ -422,12 +432,24 @@ footer {
 
     .comunidade-content {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 400px, 1fr);
         place-content: center center;
     }
 
+    .comunidade-write p{
+        margin: 2rem 8rem;
+        line-height: 1.5;
+    }
+
+    .comunidade-img img {
+        margin: 0rem;
+        padding: 0 9rem;
+    }
+    
+
     .artigos-content h1 {
         text-align: center;
+        font-size: 2.2rem;
     }
 
     .artigos-grid {
