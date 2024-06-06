@@ -235,13 +235,13 @@ main {
 #profissionais form input {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
-    border: 0.2rem solid var(--gray-color);
+    border: 0.1rem solid var(--gray-color);
     background-color: var(--gray-color);
     outline: none;
 }
 
 #profissionais form input:focus {
-    border: 0.2rem solid var(--black-color);
+    border: 0.1rem solid var(--black-color);
 }
 
 #profissionais form button {
@@ -249,7 +249,7 @@ main {
     background-color: var(--primary-color);
     border-radius: 2rem;
     color: var(--white-color);
-    border: 0.2rem solid var(--secondary-color);
+    border: none;
     cursor: pointer;
     font-weight: bold;
     margin-left: 2rem;

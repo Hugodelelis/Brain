@@ -82,6 +82,7 @@ header {
     background-color: var(--gray-color);
     border-radius: 20%;
 }
+
 main {
     margin-top: 7rem;
     min-height: calc(100vh - 12.9rem);
@@ -178,4 +179,18 @@ footer {
     color: var(--white-color);
 }
 
+@media (max-width: 760px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 2rem;
+        max-width: 100%;
+    }
+}
 
