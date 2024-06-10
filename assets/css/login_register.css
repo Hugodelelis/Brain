@@ -178,6 +178,32 @@ footer {
     color: var(--white-color);
 }
 
+footer p {
+    margin-left: 4%;
+}
+
+.footer-grid {
+    display: flex;
+    gap: 4rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-container h5 {
+    font-size: 2rem;
+}
+
+.footer-container a {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
 @media (max-width: 568px) {
     main {
         display: flex;
